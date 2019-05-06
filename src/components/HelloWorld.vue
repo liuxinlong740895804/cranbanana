@@ -88,7 +88,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: '这首歌写给你听，请你闭上眼睛'
+      msg: '这首歌写给你听，请你闭上眼睛，这是一次非凡的实验'
     }
   }
 }
