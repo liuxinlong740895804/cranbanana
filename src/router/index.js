@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 import Home from '@/components/containers/Home/Home'
 import Files from '@/components/containers/Files/Files'
+// asdsadsadsadsads
 
 Vue.use(Router)
 
