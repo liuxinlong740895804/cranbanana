@@ -1,15 +1,22 @@
-// import Vue from 'vue'
-// import Router from 'vue-router'
-// // import Header from '@/components/Header/header'
+import Vue from 'vue'
+import Router from 'vue-router'
 
-// // Vue.use(Router)
+import Home from '@/components/containers/Home/Home'
+import Files from '@/components/containers/Files/Files'
 
-// export default new Router({
-//   routes: [
-//     {
-//       // path: '/',
-//       // name: 'Header',
-//       // component: Header
-//     }
-//   ]
-// })
+Vue.use(Router)
+
+export default new Router({
+  routes: [
+    {
+      path: '/',
+      name: 'Home',
+      component: Home
+    },
+    {
+      path: '/files',
+      name: 'Files',
+      component: Files
+    }
+  ]
+})
