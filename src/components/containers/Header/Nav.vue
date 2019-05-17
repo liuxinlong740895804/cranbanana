@@ -4,8 +4,7 @@
       <nav v-if="isNavShow" >
         <ul class="nav-list" @click="toggleNav">
           <li v-for="nav in navs" :key="nav.id" class="nav-item">
-            <a href="#">{{nav.title}}<i class="fa fa-angle-right"></i>
-            </a>
+            <router-link :to="nav.path">{{nav.title}}<i class="fa fa-angle-right"></i></router-link>
           </li>
         </ul>
       </nav>
@@ -25,10 +24,11 @@ export default {
   data(){
     return {
       navs: [
-        {id:1,title:'首页'},
-        {id:2,title:'影片'},
-        {id:3,title:'影院'},
-        {id:4,title:'我的'},
+        {id:1,title:'首页',path:'/home'},
+        {id:2,title:'影片',path:'/files'},
+        {id:3,title:'影院',path:'/all'},
+        {id:4,title:'我的',path:'/myaa'},
+        {id:5,title:'二级路由实例',path:'/second'},
         ]
     }
   },
